@@ -9,7 +9,7 @@ document.getElementById("transcribeButton").addEventListener("click", async () =
     formData.append("file", audioFile);
 
     try {
-        const response = await fetch("https://api-inference.huggingface.co/models/ivrit-ai/whisper-v2-d3-e3", {
+        const response = await fetch("https://api-inference.huggingface.co/models/ivrit-ai/faster-whisper-v2-d4", {
             method: "POST",
             headers: {
                 "Authorization": "Bearer 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" // החלף את YOUR_HUGGING_FACE_TOKEN בטוקן שלך
